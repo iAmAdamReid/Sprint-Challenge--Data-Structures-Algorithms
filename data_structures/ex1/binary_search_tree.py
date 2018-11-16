@@ -1,3 +1,5 @@
+import queue as queue
+
 class BinarySearchTree:
   def __init__(self, value):
     self.value = value
@@ -8,7 +10,30 @@ class BinarySearchTree:
     pass    
 
   def breadth_first_for_each(self, cb):
-    pass
+    # base case for empty tree
+    if self.value == None:
+      return
+
+    # initialize our storage queue
+    storage = queue.Queue()
+    # add the root node
+    storage.put(self)
+
+    # do this while there are nodes in queue
+    while not storage.empty():
+      # process the queued node (in first case, the root note)
+      current = storage.get()
+      # run the cb() on its value
+      cb(current.value)
+      if current.left:
+        # if current has left child, add to queue
+        storage.put(current.left)
+      if current.right:
+        # if current has right child, add to queue
+        storage.put(current.right)
+    
+    # the while loop will traverse all nodes and run the cb() on each of their values until the queue is empty
+    # pass
 
   def insert(self, value):
     new_tree = BinarySearchTree(value)
