@@ -7,7 +7,17 @@ class BinarySearchTree:
     self.right = None
 
   def depth_first_for_each(self, cb):
-    pass    
+    # initialize a list to use as a stack
+    stack = [self]
+    # while there are elements in the list, do this logic
+    while len(stack) > 0:
+      current = stack.pop()
+      cb(current.value)
+      # the right > left ordering is important here
+      if current.right:
+        stack.append(current.right)
+      if current.left:
+        stack.append(current.left)
 
   def breadth_first_for_each(self, cb):
     # base case for empty tree
