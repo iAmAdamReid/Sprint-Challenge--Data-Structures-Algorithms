@@ -7,7 +7,7 @@ a) The time complexity of this operation is O(n) linear time. The break conditio
 
 b) The time complexity of this operation is O(n^3). The final loop only runs 9 times regardless of n, so its complexity is O(1). Our worst case becase of the 3 nested loops is O(n^3).
 
-c) The time complexity of this operation is O(1) constant time, because we're recursively calling n-1 until n reaches 0. Therefore, we call the function n times. Consider: n - n = 0
+c) The time complexity of this operation is O(n) linear time, because we're recursively calling n-1 until n reaches 0. Therefore, we call the function n times. Consider: n - n = 0
 
 **Exercise II**
 
