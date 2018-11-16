@@ -22,4 +22,4 @@ The distance between them is:
 upper: n
 lower: n - 1
 
-From here, we can determine that the upper value is the unsafe range, and the lower value is our safe range;
+From here, we can determine that the upper value is the unsafe range, and the lower value is our safe range.

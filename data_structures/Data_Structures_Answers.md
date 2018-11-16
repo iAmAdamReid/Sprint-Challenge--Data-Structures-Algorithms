@@ -1,8 +1,10 @@
 Add your answers to the questions below.
 
 1. What is the runtime complexity of your `depth_first_for_each` method?
+    O(n) since we traverse each element once.
 
 2. What is the space complexity of your `depth_first_for_each` function?
+    O(n) since we would at worst case need to hold all the nodes in the stack.
 
 3. What is the runtime complexity of your `breadth_first_for_each` method?
     O(n) since we are traversing each node once.
