@@ -1,7 +1,6 @@
 def heapsort(arr):
   # heapify the array
   heap_array = Heap()
-
   for element in arr:
     heap_array.insert(element)
     # this adds all elements in the array, and bubbles the highest to the top of the heap TC = O(n)
@@ -12,7 +11,7 @@ def heapsort(arr):
   while heap_array.get_size() > 0:
     sorted_array.insert(0, heap_array.delete())
     # this mimicks the behaviour of 'unshift' in javascript by inserting the value to the front of the array (index [0])
-    # this insert() method is not to be confused with the heap .insert() method
+    # this list.insert() method is not to be confused with the heap.insert() method
 
   return sorted_array
 
