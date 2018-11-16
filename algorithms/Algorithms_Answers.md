@@ -5,9 +5,9 @@ Add your answers to the Algorithms exercises here.
 a) The time complexity of this operation is O(n) linear time. The break condition of the loop is n^3 while the arithmetic addition sums n^2. Thus, we would need to sum n^2 * n number of times to reach n^3. Consider: n^3 = n^2 * n
 
 
-b) The time complexity of this operation is n^c quadratic time. Each nested loop depends on the value of "i" in the first loop, which is time complexity O(n) linear time. Therefore, we are deadling with n linear time, 4 different times, which gives us O(n^4).
+b) The time complexity of this operation is O(n^3). The final loop only runs 9 times regardless of n, so its complexity is O(1). Our worst case becase of the 3 nested loops is O(n^3).
 
-c) The time complexity of this operation is O(n^3) cubic time, because the final loop only ever runs 9 times, regardless of what n is. Therefore, the final loop is O(1), while the other three nested loops give us O(n^3). So the worst case is O(n^3).
+c) The time complexity of this operation is O(1) constant time, because we're recursively calling n-1 until n reaches 0. Therefore, we call the function n times. Consider: n - n = 0
 
 **Exercise II**
 
