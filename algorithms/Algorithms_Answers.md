@@ -7,7 +7,7 @@ a) The time complexity of this operation is O(n) linear time. The break conditio
 
 b) The time complexity of this operation is n^c quadratic time. Each nested loop depends on the value of "i" in the first loop, which is time complexity O(n) linear time. Therefore, we are deadling with n linear time, 4 different times, which gives us O(n^4).
 
-c) The time complexity of this operation is O(1) constant time, because the final loop only ever runs 9 times, regardless of what n is.
+c) The time complexity of this operation is O(n^3) cubic time, because the final loop only ever runs 9 times, regardless of what n is. Therefore, the final loop is O(1), while the other three nested loops give us O(n^3). So the worst case is O(n^3).
 
 **Exercise II**
 
